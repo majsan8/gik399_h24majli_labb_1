@@ -43,12 +43,51 @@ De kan inte användas utanför blocket, varken före eller efter.
 
 */
 
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 //UPPGIFT 3- JÄMFÖRELSER OCH SPECIALVÄRDEN
  
-console.log("3" == 3); //true. == typkonverterar och därför blir de samma typ. Dvs. strängen "3" blir talet/numret 3
+/*console.log("3" == 3); //true. == typkonverterar och därför blir de samma typ. Dvs. strängen "3" blir talet/numret 3
 console.log("3" === 3); //false eftersom en string jämförs med ett number
 
 console.log(NaN === NaN); //kluring. Detta ger false. NaN är aldrig lika något annat värde, inte ens sig själv
 console.log(null == undefined); //true. null = inget värde. undefined = har ännu inte tilldelat värde. Det är tydligen samma värde i js då båda har en avsaknad av ett värde.
 console.log(null === undefined); //false. Eftersom null är en egen typ och undefined är en annan egen typ = inte samma typ.
 
+//ternary operator
+console.log(undefined ? "truthy" : "falsy");
+*/
+
+/* REFLEKTION UPPGIFT 3
+1. Output på värden med == och ===:
+    Om man jämför en string t.ex. "3" med ett numreriskt värde (3 i detta fall) med == genomförs en typkonvertering vilket gör stringen "3" till numret 3. 
+    Då jämförs 3 med 3 och det är ju samma dvs. outputen är true. 
+    Om man tar "3" === 3 jämförs typerna med varandra och en string är inte ett numreriskt värde dvs. outputen är false. 
+
+    Med samma logik som ovan kan man tro att NaN === NaN är true, men så är det inte.
+    I fallet med NaN kan det inte jämföras med något annat värde eller sig själv. 
+    Outputen blir false.
+     
+    null == undefined ger outputen true. 
+    Detta eftersom i javascript betyder de båda en avsaknad av ett värde.
+    Eftersom == typkonverterar blir det att man jämför avsaknad av värde med avsaknad av värde. 
+
+    null === undefined ger outputen false.
+    Detta är eftersom null är en enskild typ och undefined är en annan enskild typ.
+    Eftersom === typkonverterar och jämför typer, blir det false då båda värdena är egna värden.
+
+2. Självstående uttryck VS. inom paranteserna hos en if-sats:
+    Om ett uttryck står för sig själv körs det direkt och returnerar sitt värde.
+    I en if-sats utvärderas uttrycket som en bool. 
+    Om värdena räknas som truthy (inte false, 0, tom sträng, null, undefined) så körs if-satsen.
+
+
+3. Vad är och representerar NaN, undefined och null?:
+    NaN står för "Not a number" vilket representerar ett resultat av en ogiltig eller odefinierbar beräkning av nummer.
+    Null betyder inget värde. Det är inte samma sak som 0, utan används medvetet för att  visa på att en variabel är tom på värde(n).
+    Undefined betyder att en variabel är deklarerad men ännu inte har tilldelats ett värde.
+*/
+
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+//UPPGIFT 4- Funktioner
