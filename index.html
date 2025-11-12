@@ -10,15 +10,18 @@
 </body>
 </html>
 
-<!--
-1. Betydelsen av placeringen av <script>
+<!-- UPPGIFT 1- SKAPA HTML FIL OCH KOPPLA SCRIPT /\ 
+    
+REFLEKTION UPPGIFT 1:
+
+1. Betydelsen av placeringen av <script>:
     Man kan placera <script> länken i både <head> och <body>.
     Det spelar roll eftersom om man placerar den i <head> körs scriptet först (eftersom HTML är top-down) och då kan element som scriptet behöver, inte ha hunnit laddats in/inte finnas än. 
     Detta kan leda till fel vid körning.
     Det är alltså säkrast att placera <script> i slutet av <body> för att säkerställa att allt innan redan lästs in. 
     Om man vill ha <script> i <head> kan man använda defer för att undvika problem vis körning.
 
-2. Attributet defer
+2. Attributet defer:
     I vanliga fall läses ett HTML-dokument in top-down. 
     Det vill säga, det som står först läses in först.
     Attributet "defer" gör att scriptet körs sist, oavsett vart det ligger i koden. 
