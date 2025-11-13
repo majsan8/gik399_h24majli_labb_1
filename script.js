@@ -91,3 +91,50 @@ console.log(undefined ? "truthy" : "falsy");
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 //UPPGIFT 4- Funktioner
+/*
+// 3. variabel name (global/i roten)
+let name = "Maja"
+
+// 1. Skapa funktionen greet med parametern name
+function greet(name)
+{
+    console.log("I funktionen, parameterns name:", name);
+    return "Hej " + name;
+}
+
+//2. Anropar funktionen med valfritt argument. Denna nya parameter kommer skriva över det name jag angav högre upp dvs. "Maja". "Molly" blir ocks¨å strängen i funktionen ovan istället.
+ console.log(greet("Molly")); //går även att anropa funktionen innan funktionsblocket då jag använder en funktionsdeklaration
+
+//2. Sparar returvärdet i en variabel
+let greetingValue = greet("Lennart");
+console.log(greetingValue);
+
+//3. Utskrift av den globala variabeln 
+console.log("Utanför funktionen, här hälsar vi på:", name);
+*/
+
+/* REFLEKTION UPPGIFT 4
+1. Skillnader med att skapa funktioner med de 3 olika sätten:
+    Funktionsdeklaration kan anropas innan den deklareras alltså innan blocket.
+    Funktionsuttryck kan bara anropas efter raden med kod där den definieras (alltså inte innan blocket).
+    Arrowfunktion har en kortare syntax men kan också bara anropas efter raden där den definieras. 
+
+2. Reflektion om varifrån man kan anropa funktioner:
+En funktionsdeklaration ger mer flexibilitet då den kan anropas innan den deklarerats.
+Funktionsdeklaration eller arrowfunktion kan endast anropas efter koden där de skapas. 
+Detta ger en striktare kontroll över funktionerna men det kan vara bra om man vill ha bra koll på flödet i koden och veta exakt vad när något sker.
+
+3. Ändrig av variabeln/parametern name i de olika situationerna och utskriftens påverkan:
+Om jag ändrar name innuti en funktion sriver de över den globala variabeln.
+Dvs. det är det namn jag skriver in i funktionen som kommer finnas i utskriften av funktionen.
+Om jag ändrar den globala variabeln name ändras namnet i utskriften för alla funktioner som använder den utanför blocket.
+
+4. Skillnaden mellan parameter, variabel och argument:
+Parameter är en plats för ett värde. 
+I denna kod är parametern "name".
+Argumentet är själva värdet t.ex. "Molly". 
+Det är det värde som skrivs ut.
+Variabel är en behållare för ett värde.
+T.ex. i raden med let name = "Maja" så är name variabeln. 
+Den lagrar det värde den tilldelas.
+*/ 
