@@ -1,13 +1,14 @@
 
 //UPPGIFT 2- VARIABLER OCH SCOPE
 
-/* //ANVÄNDNING FÖRE BLOCKET:
+//ANVÄNDNING FÖRE BLOCKET:
+/*
 console.log(variabel_var); //konsollen skriver ut "undefined"
 console.log(variabel_let); //ingenting händer
 console.log(variabel_const); //ingenting händer
 */
 
-/*//SKAPAR VARIABLER OCH ANVÄNDNING I BLOCKET:
+//SKAPAR VARIABLER OCH ANVÄNDNING I BLOCKET:
 {
     var variabel_var = "hej"
     let variabel_let = "hello"
@@ -18,14 +19,13 @@ console.log(variabel_const); //ingenting händer
     console.log(variabel_let);
     console.log(variabel_const);
 }
-*/
 
-/* //ANVÄNDNING EFTER BLOCKET: var variabeln skrivs ut korrekt, inte letvariabeln eller constvariabeln:
+/*
+//ANVÄNDNING EFTER BLOCKET: var variabeln skrivs ut korrekt, inte letvariabeln eller constvariabeln:
 console.log(variabel_var); //fungerar!
 console.log(variabel_let); //ger fel
 console.log(variabel_const); //ger fel
 */
-
 
 /* REFLEKTION UPPGIFT 2:
 1. Skillnaden på var, let och const gällande block:
@@ -47,7 +47,7 @@ De kan inte användas utanför blocket, varken före eller efter.
 
 //UPPGIFT 3- JÄMFÖRELSER OCH SPECIALVÄRDEN
  
-/*console.log("3" == 3); //true. == typkonverterar och därför blir de samma typ. Dvs. strängen "3" blir talet/numret 3
+console.log("3" == 3); //true. == typkonverterar och därför blir de samma typ. Dvs. strängen "3" blir talet/numret 3
 console.log("3" === 3); //false eftersom en string jämförs med ett number
 
 console.log(NaN === NaN); //kluring. Detta ger false. NaN är aldrig lika något annat värde, inte ens sig själv
@@ -56,7 +56,6 @@ console.log(null === undefined); //false. Eftersom null är en egen typ och unde
 
 //ternary operator
 console.log(undefined ? "truthy" : "falsy");
-*/
 
 /* REFLEKTION UPPGIFT 3
 1. Output på värden med == och ===:
@@ -91,7 +90,7 @@ console.log(undefined ? "truthy" : "falsy");
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 //UPPGIFT 4- Funktioner
-/*
+
 // 3. variabel name (global/i roten)
 let name = "Maja"
 
@@ -111,7 +110,6 @@ console.log(greetingValue);
 
 //3. Utskrift av den globala variabeln 
 console.log("Utanför funktionen, här hälsar vi på:", name);
-*/
 
 /* REFLEKTION UPPGIFT 4
 1. Skillnader med att skapa funktioner med de 3 olika sätten:
